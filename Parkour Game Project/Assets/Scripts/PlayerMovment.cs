@@ -12,6 +12,9 @@ public class PlayerMovment : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 14f;
 
+    private enum MovementState {idle, running, jumping, falling }
+    private MovementState state = MovementState.Idle;
+
 
     // Start is called before the first frame update
     private void Start()
