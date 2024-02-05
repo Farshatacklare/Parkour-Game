@@ -32,10 +32,10 @@ public class PlayerMovment : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-        UpdateAnimationState();   
+        UpdateAnimationUpdate();   
     }
 
-    private void UpdateAnimationState()
+    private void UpdateAnimationUpdate()
     {
         if (directionX > 0f)
         {
